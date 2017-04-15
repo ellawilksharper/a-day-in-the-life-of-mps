@@ -16,31 +16,22 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <script src="https://www.w3schools.com/lib/w3data.js"></script>
   </head>
   <body>
     <h1>A Day in the Life of an MP</h1>
     <p>Choose MP 1</p>
-    <select class="mp_dropdown">
-      <optgroup label="Conservative">
-          <option>Theresa May</option>
-      </optgroup>
-      <optgroup label="Labour">
-          <option>Jeremy Corbyn</option>
-      </optgroup>
-    </select>
+      <div w3-include-html="mp_dropdown.html"></div>
     <p>Choose MP 2</p>
-    <select class="mp_dropdown">
-      <optgroup label="Conservative">
-          <option>Theresa May</option>
-      </optgroup>
-      <optgroup label="Labour">
-          <option>Jeremy Corbyn</option>
-      </optgroup>
+      <div w3-include-html="mp_dropdown.html"></div>
     </select>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script>
+      w3IncludeHTML();
+    </script>
   </body>
 </html>
