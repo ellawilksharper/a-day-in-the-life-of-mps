@@ -27,7 +27,7 @@ MAPPING = {
 
 function init() {
     $('.mp-dropdown').each(function(index, mp){
-        mp.change(function(){
+        $(mp).change(function(){
             show_tweets(index, mp.val());
             change_graph_source(index, 'static/images/' + mp.val());
         });
@@ -46,7 +46,9 @@ function show_tweets(index, mp) {
     $('.twitter-tweet')[index].innerHTML = '<p lang="en" dir="ltr">' + text + '</p>— @' + username + ' ' + date;
 }
 
-$( document ).ready(function() {
+$(document).ready(function() {
     w3IncludeHTML();
+});
+$(window).load(function() {
     init();
 });
