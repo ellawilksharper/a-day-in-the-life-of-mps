@@ -10,7 +10,7 @@ function change_graph_source(index, mp_name) {
 }
 
 function set_tweet(tweet, mp_map) {
-    $(tweet).text('<p lang="en" dir="ltr">' + mp_map['text'] + '</p>— @' + mp_map['username'] + ' ' + mp_map['date']);
+    tweet.innerHTML = '<p lang="en" dir="ltr">' + mp_map['text'] + '</p>— @' + mp_map['username'] + ' ' + mp_map['date'];
 }
 
 function show_tweets(index, mp) {
@@ -26,7 +26,7 @@ function show_tweets(index, mp) {
         }
         set_tweet(tweet, MAPPING[mp][count]);
 
-    }, 4000);
+    }, 3000);
 }
 
 $(document).ready(function() {
