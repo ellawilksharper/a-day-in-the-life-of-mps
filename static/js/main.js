@@ -27,12 +27,13 @@ MAPPING = {
 
 function change_mp(mp) {
     var index = parseInt($($(mp).closest('.row')[0]).attr('name').split('-')[1]);
-    show_tweets(index, $(mp).val());
-    change_graph_source(index, 'static/images/' + mp.val());
+    var val = $(mp).val()
+    show_tweets(index, val);
+    change_graph_source(index, val);
 }
 
-function change_graph_source(index, new_src) {
-    $('.graph')[index].attr('src', new_src);
+function change_graph_source(index, mp_name) {
+    $('.graph')[index].attr('src', 'static/images/' + mp_name + '.jpg');
 }
 
 function show_tweets(index, mp) {
