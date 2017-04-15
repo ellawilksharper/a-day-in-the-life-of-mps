@@ -48,7 +48,5 @@ function show_tweets(index, mp) {
 
 $(document).ready(function() {
     w3IncludeHTML();
-    $(window).load(function() {
-        init();
-    });
+    init();
 });
