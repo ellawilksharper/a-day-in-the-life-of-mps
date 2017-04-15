@@ -9,6 +9,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="https://www.w3schools.com/lib/w3data.js"></script>
+  <script src="static/js/main.js"></script>
 </head>
 <body>
 
@@ -24,12 +25,11 @@
     </div>
     <div class="col-sm-4">
       <h3>What tweet this person might get</h3>
-      <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Test Tweet 1</p>&mdash; Person 1 (@person1) April 15, 2017</blockquote>
+      <div w3-include-html="static/html/tweet.html"></div>
     </div>
     <div class="col-sm-4">
       <h3>Graph</h3>
-      <img src="static/images/image1.jpg" alt="MP 1 Graph" style="width:304px;height:228px;">
-
+      <div w3-include-html="static/html/graph.html"></div>
     </div>
   </div>
   <div class="row">
@@ -39,19 +39,15 @@
     </div>
     <div class="col-sm-4">
       <h3>What tweet this person might get</h3>
-      <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Test Tweet 2</p>&mdash; Person 2 (@person2) April 15, 2017</blockquote>
+      <div w3-include-html="static/html/tweet.html"></div>
     </div>
     <div class="col-sm-4">
       <h3>Graph</h3>
-      <img src="static/images/image2.jpg" alt="MP 2 Graph" style="width:304px;height:228px;">
-
+      <div w3-include-html="static/html/graph.html"></div>
     </div>
   </div>
 </div>
 
 </body>
-<script>
-  w3IncludeHTML();
-</script>
 </html>
 
