@@ -25,13 +25,10 @@ MAPPING = {
     ]
 }
 
-function init() {
-    $('.mp-dropdown').each(function(index, mp){
-        $(mp).change(function(){
-            show_tweets(index, mp.val());
-            change_graph_source(index, 'static/images/' + mp.val());
-        });
-    });
+function change_mp(this) {
+    var index = $(this).closest('.row').getAttr('name').split('-')[1];
+    show_tweets(index, $(this).val());
+    change_graph_source(index, 'static/images/' + mp.val());
 }
 
 function change_graph_source(index, new_src) {
@@ -47,5 +44,5 @@ function show_tweets(index, mp) {
 }
 
 $(document).ready(function() {
-    init();
+    w3IncludeHTML();
 });
