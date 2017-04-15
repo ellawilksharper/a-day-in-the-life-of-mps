@@ -1,38 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Cabinet Wars</title>
+<head>
+  <title>Cabinet Wars</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://www.w3schools.com/lib/w3data.js"></script>
+  <script>
+    w3IncludeHTML();
+  </script>
+</head>
+<body>
 
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+<div class="jumbotron text-center">
+  <h1>A day in the life of an MP</h1>
+</div>
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    <script src="https://www.w3schools.com/lib/w3data.js"></script>
-  </head>
-  <body>
-    <h1>A Day in the Life of an MP</h1>
-    <p>Choose MP 1</p>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>Choose MP...</h3>
+      <p></p>
       <div w3-include-html="mp_dropdown.html"></div>
-    <p>Choose MP 2</p>
+      <p></p>
       <div w3-include-html="mp_dropdown.html"></div>
-    </select>
-    <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">This is aimed at labour&#39;s resident racist Abbott</p>&mdash; anthonysokolsky (@anthon2754) April 12, 2017</blockquote>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-    <script>
-      w3IncludeHTML();
-    </script>
-  </body>
+    </div>
+    <div class="col-sm-4">
+      <h3>What tweet this person might get</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Graph</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+  </div>
+</div>
+
+</body>
 </html>
+
