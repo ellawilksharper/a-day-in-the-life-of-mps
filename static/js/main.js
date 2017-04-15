@@ -16,22 +16,15 @@ function show_tweets(index, mp) {
         $($('.twitter-tweet')[index]).fadeOut(400, function() {
             $(this).text('<p lang="en" dir="ltr">' + mp_map['text'] + '</p>— @' + mp_map['username'] + ' ' + mp_map['date']);
         });
-        count++;
-    });
+        if (count < MAPPING[mp].length - 1) {
+            count++;
+        } else {
+            count = 0;
+        }
+        
+    }, 4000);
 }
 
 $(document).ready(function() {
     w3IncludeHTML();
-});
-
-
-$(function () {
-  count = 0;
-  wordsArray = ["Beta", "Gamma", "Delta", "Alpha"];
-  setInterval(function () {
-    count++;
-    $("#word").fadeOut(400, function () {
-      $(this).text(wordsArray[count % wordsArray.length]).fadeIn(400);
-    });
-  }, 2000);
 });
