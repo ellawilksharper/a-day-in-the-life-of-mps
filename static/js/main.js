@@ -9,8 +9,8 @@ MAPPING = {
             'text': 'tmay tweet2',
             'username': 'tmay_tweeter2',
             'date': 'April 15, 2017',
-        }
-    ]
+        },
+    ],
     'jeremycorbyn': [
         {
             'text': 'jcorbyn tweet',
@@ -21,7 +21,7 @@ MAPPING = {
             'text': 'jcorbyn tweet2',
             'username': 'jcorbyn_tweeter2',
             'date': 'April 15, 2017',
-        }
+        },
     ]
 }
 
