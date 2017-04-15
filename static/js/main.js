@@ -33,7 +33,7 @@ function change_mp(mp) {
 }
 
 function change_graph_source(index, mp_name) {
-    $('.graph')[index].attr('src', 'static/images/' + mp_name + '.jpg');
+    $($('.graph')[index]).attr('src', 'static/images/' + mp_name + '.jpg')
 }
 
 function show_tweets(index, mp) {
