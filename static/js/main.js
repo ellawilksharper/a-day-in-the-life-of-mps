@@ -29,7 +29,7 @@ function init() {
     $('.mp-dropdown').each(function(index, mp){
         mp.change(function(){
             show_tweets(index, mp.val());
-            change_graph_source(index, 'static/images/' + mp.val();
+            change_graph_source(index, 'static/images/' + mp.val());
         });
     });
 }
