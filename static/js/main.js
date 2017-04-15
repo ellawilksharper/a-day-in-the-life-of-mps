@@ -9,19 +9,23 @@ function change_graph_source(index, mp_name) {
     $($('.graph')[index]).attr('src', 'static/images/' + mp_name + '.jpg')
 }
 
+function set_tweet(tweet, mp_map) {
+    $(tweet).text('<p lang="en" dir="ltr">' + mp_map['text'] + '</p>— @' + mp_map['username'] + ' ' + mp_map['date']);
+}
+
 function show_tweets(index, mp) {
-    count = 0;
+    var tweet = $('.twitter-tweet')[index];
+    var count = 0;
+    set_tweet(tweet, MAPPING[mp][count]);
+
     setInterval(function(){
-        var mp_map = MAPPING[mp][count];
-        $($('.twitter-tweet')[index]).fadeOut(400, function() {
-            $(this).text('<p lang="en" dir="ltr">' + mp_map['text'] + '</p>— @' + mp_map['username'] + ' ' + mp_map['date']);
-        });
-        if (count < MAPPING[mp].length - 1) {
+        if (count < MAPPING[mp].length) {
             count++;
         } else {
-            count = 0;
+            count = -1;
         }
-        
+        set_tweet(tweet, MAPPING[mp][count]);
+
     }, 4000);
 }
 
