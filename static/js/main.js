@@ -26,7 +26,7 @@ MAPPING = {
 }
 
 function change_mp(mp) {
-    var index = $(mp).closest('.row').getAttr('name').split('-')[1];
+    var index = parseInt($($(mp).closest('.row')[0]).attr('name').split('-')[1]);
     show_tweets(index, $(mp).val());
     change_graph_source(index, 'static/images/' + mp.val());
 }
