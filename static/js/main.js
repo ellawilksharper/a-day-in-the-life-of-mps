@@ -25,9 +25,9 @@ MAPPING = {
     ]
 }
 
-function change_mp(this) {
-    var index = $(this).closest('.row').getAttr('name').split('-')[1];
-    show_tweets(index, $(this).val());
+function change_mp(mp) {
+    var index = $(mp).closest('.row').getAttr('name').split('-')[1];
+    show_tweets(index, $(mp).val());
     change_graph_source(index, 'static/images/' + mp.val());
 }
 
