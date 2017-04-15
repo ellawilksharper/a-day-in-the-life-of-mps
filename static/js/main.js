@@ -1,30 +1,3 @@
-MAPPING = {
-    'theresamay': [
-        {
-            'text': 'tmay tweet',
-            'username': 'tmay_tweeter',
-            'date': 'April 13, 2017',
-        },
-        {
-            'text': 'tmay tweet2',
-            'username': 'tmay_tweeter2',
-            'date': 'April 15, 2017',
-        },
-    ],
-    'jeremycorbyn': [
-        {
-            'text': 'jcorbyn tweet',
-            'username': 'jcorbyn_tweeter',
-            'date': 'April 14, 2017',
-        },
-        {
-            'text': 'jcorbyn tweet2',
-            'username': 'jcorbyn_tweeter2',
-            'date': 'April 15, 2017',
-        },
-    ]
-}
-
 function change_mp(mp) {
     var index = parseInt($($(mp).closest('.row')[0]).attr('name').split('-')[1]);
     var val = $(mp).val()
@@ -37,13 +10,28 @@ function change_graph_source(index, mp_name) {
 }
 
 function show_tweets(index, mp) {
-    var mp_map = MAPPING[mp][0];
-    var text = mp_map['text'];
-    var username = mp_map['username'];
-    var date = mp_map['date'];
-    $('.twitter-tweet')[index].innerHTML = '<p lang="en" dir="ltr">' + text + '</p>— @' + username + ' ' + date;
+    count = 0;
+    setInterval(function(){
+        var mp_map = MAPPING[mp][count];
+        $($('.twitter-tweet')[index]).fadeOut(400, function() {
+            $(this).text('<p lang="en" dir="ltr">' + mp_map['text'] + '</p>— @' + mp_map['username'] + ' ' + mp_map['date']);
+        });
+        count++;
+    });
 }
 
 $(document).ready(function() {
     w3IncludeHTML();
+});
+
+
+$(function () {
+  count = 0;
+  wordsArray = ["Beta", "Gamma", "Delta", "Alpha"];
+  setInterval(function () {
+    count++;
+    $("#word").fadeOut(400, function () {
+      $(this).text(wordsArray[count % wordsArray.length]).fadeIn(400);
+    });
+  }, 2000);
 });
