@@ -1,3 +1,5 @@
+INTERVALS = [0, 0]
+
 function change_mp(mp) {
     var index = parseInt($($(mp).closest('.row')[0]).attr('name').split('-')[1]);
     var val = $(mp).val()
@@ -14,12 +16,16 @@ function set_tweet(tweet, mp_map) {
 }
 
 function show_tweets(index, mp) {
+    if (INTERVALS[index] != 0) {
+        clearInterval(INTERVALS[index]);
+    }
+
     var tweet = $('.twitter-tweet')[index];
     $(tweet).show();
     var count = 0;
     set_tweet(tweet, MAPPING[mp][count]);
 
-    setInterval(function(){
+    INTERVALS[index] = setInterval(function(){
         if (count < MAPPING[mp].length) {
             count++;
         } else {
