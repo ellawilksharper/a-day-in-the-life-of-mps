@@ -6,7 +6,7 @@ function change_mp(mp) {
 }
 
 function change_graph_source(index, mp_name) {
-    $($('.graph')[index]).attr('src', 'static/images/' + mp_name + '.jpg')
+    $($('.graph')[index]).display().attr('src', 'static/images/' + mp_name + '.jpg');
 }
 
 function set_tweet(tweet, mp_map) {
@@ -15,6 +15,7 @@ function set_tweet(tweet, mp_map) {
 
 function show_tweets(index, mp) {
     var tweet = $('.twitter-tweet')[index];
+    $(tweet).display();
     var count = 0;
     set_tweet(tweet, MAPPING[mp][count]);
 
