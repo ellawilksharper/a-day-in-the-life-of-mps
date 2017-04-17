@@ -1,33 +1,32 @@
-INTERVALS = [0, 0]
+INTERVAL = 0
 
 function change_mp(mp) {
-    var index = parseInt($($(mp).closest('.row')[0]).attr('name').split('-')[1]);
     var val = $(mp).val()
     var mp_map = MAPPING[val]
-    show_tweets(mp_map, index);
-    change_graph_source(mp_map, index);
+    show_tweets(mp_map);
+    change_graph_source(mp_map);
 }
 
-function change_graph_source(mp_map, index) {
+function change_graph_source(mp_map) {
     var graph_data = get_graph_data(mp_map);
-    Highcharts.chart('graph-container-' + index, graph_data);
+    Highcharts.chart('graph-container', graph_data);
 }
 
 function set_tweet(tweet, mp_map) {
     tweet.innerHTML = '<p lang="en" dir="ltr">' + mp_map['text'] + '</p>— @' + mp_map['username'] + ' ' + mp_map['date'];
 }
 
-function show_tweets(mp_map, index) {
-    if (INTERVALS[index] != 0) {
-        clearInterval(INTERVALS[index]);
+function show_tweets(mp_map) {
+    if (INTERVAL != 0) {
+        clearInterval(INTERVAL);
     }
 
-    var tweet = $('.twitter-tweet')[index];
+    var tweet = $('.twitter-tweet');
     $(tweet).show();
     var count = 0;
     set_tweet(tweet, mp_map[count]);
 
-    INTERVALS[index] = setInterval(function(){
+    INTERVAL = setInterval(function(){
         if (count < mp_map.length - 1) {
             count++;
         } else {
