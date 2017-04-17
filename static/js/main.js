@@ -22,7 +22,7 @@ function show_tweets(mp_map) {
         clearInterval(INTERVAL);
     }
 
-    var tweet = $('.twitter-tweet');
+    var tweet = $('.twitter-tweet')[0];
     $(tweet).show();
     var count = 0;
     set_tweet(tweet, mp_map[count]);
