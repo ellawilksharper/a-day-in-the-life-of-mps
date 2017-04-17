@@ -10,6 +10,7 @@ function change_mp(mp) {
 function change_graph_source(mp_map) {
     var graph_data = get_graph_data(mp_map);
     Highcharts.chart('graph-container', graph_data);
+    $('#graph-container').show();
 }
 
 function set_tweet(tweet, mp_map) {
