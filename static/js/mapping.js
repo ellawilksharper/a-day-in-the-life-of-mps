@@ -85,7 +85,7 @@ MAPPING = {
     "sajidjavid": [{
             "text": "@sajidjavid Haha. Don't pretend like you give a fuck.",
             "username": "eddiesenior",
-            "date": "April 15, 2017"
+            "date": "April 05, 2017"
         },
         {
             "text": "@sajidjavid Fuck off.",
@@ -627,7 +627,7 @@ MAPPING = {
         {
             "text": "@BorisJohnson @StateDept Johnson is unfit for office, a buffoon!He's made a laughing stock of himsel",
             "username": "rogeruk49",
-            "date": "April 15, 2017"
+            "date": "April 05, 2017"
         },
         {
             "text": "@GraceBrodie Wouldn't trust BJohnson to tie my shoelace @BorisJohnson is an inept buffoon ",
