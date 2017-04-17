@@ -35,7 +35,7 @@ function show_tweets(mp_map) {
         }
         set_tweet(tweet, mp_map[count]);
 
-    }, 3000);
+    }, 3500);
 }
 
 function get_graph_data(mp_map) {
@@ -63,6 +63,7 @@ function get_graph_data(mp_map) {
         chart: {
             type: 'bar'
         },
+        width: 300px,
         title: {
             text: mp_map.name
         },
