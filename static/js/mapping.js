@@ -61,7 +61,6 @@ MAPPING = {
             "date": "April 15, 2017"
         }
     ],
-
     "sarahchampion": [{
         "text": "@SarahChampionMP You and your fascist party is finished, please leave",
         "username": "legoyed",
@@ -394,7 +393,6 @@ MAPPING = {
             "date": "April 15, 2017"
         }
     ],
-
     "jeremyhunt": [{
             "text": "In case any of you ever forget.@Jeremy_Hunt is a CUNT# SAVEOURNHS",
             "username": "RobAKemp1966 ",
@@ -437,13 +435,11 @@ MAPPING = {
             "date": "April 15, 2017"
         }
     ],
-
     "gregclark": [{
         "text": "hypocrite!",
         "username": "PARRY1956",
         "date": "April 15, 2017"
     }],
-
     "damiangreen": [{
             "text": "Do you genuinely believe the Shite you spout ?",
             "username": "IanDavidRogers1",
@@ -460,7 +456,6 @@ MAPPING = {
             "date": "April 15, 2017"
         }
     ],
-
     "daviddavis": [{
             "text": "Can he please fuck off way way north, like the arctic ?",
             "username": "Pedanntic",
@@ -487,7 +482,6 @@ MAPPING = {
             "date": "April 15, 2017"
         }
     ],
-
     "amberrudd": [{
             "text": "@AmberRudd_MP @Conservatives Are you sure, bitches ? Opening teatime in tick tock tick tock.Have fun, fatty babe ",
             "username": "sy20160722",
@@ -530,7 +524,6 @@ MAPPING = {
             "date": "April 15, 2017"
         }
     ],
-
     "liamfox": [{
             "text": ".@LiamFoxMP You are an utter corrupt disgrace a shame to Britain.Money laundering for murderers is not good business",
             "username": "LostChordof1963",
@@ -562,13 +555,11 @@ MAPPING = {
             "date": "April 15, 2017"
         }
     ],
-
     "andrealeadsom": [{
         "text": "@andrealeadsom Deluded",
         "username": "Kurako76",
         "date": "April 15, 2017"
     }],
-
     "Philiphammond ": [{
         "text": "Oh what a liar you are philip ???",
         "username": "bigbadfuds",
@@ -623,7 +614,6 @@ MAPPING = {
             "date": "April 15, 2017"
         }
     ],
-
     "borisjohnson": [{
             "text": "your idiocy displayed a complete failure, idiot! Good luck!!! In your next effort which bounds to fail again. You are a clawn.",
             "username": "davignton",
@@ -655,7 +645,6 @@ MAPPING = {
             "date": "April 15, 2017"
         }
     ],
-
     "elizabethtruss": [{
             "text": "If you want to know why you can't afford to insure the car you use to get to work and support your family anymore ask @trussliz",
             "username": "NathanBird9",
@@ -687,7 +676,6 @@ MAPPING = {
             "date": "April 15, 2017"
         }
     ],
-
     "pritipatel": [{
             "text": "@patel4witham they cucked you big time.You got played like the side bitch you are",
             "username": "SaintTheJase",
@@ -719,12 +707,11 @@ MAPPING = {
             "date": "April 15, 2017"
         }
     ],
-    "PatrickMcLoughlin": [{
+    "patrickmcloughlin": [{
         "text": "@Patrick4Dales Do you feel any shame for this shambles or do you mistakenly believe you're competent?",
         "username": "rostron71",
         "date": "April 15, 2017"
     }],
-
     "timfarron": [{
             "text": "@timfarron Farron, when an intelligent man is speaking, shut the fuck up!!!",
             "username": "MasculistUK",
@@ -786,7 +773,6 @@ MAPPING = {
             "date": "April 15, 2017"
         }
     ],
-
     "nicolasturgeon": [{
             "text": "@NicolaSturgeon you need a psychiatrist deluded woman.Indy2 more divisive than before.People do NOT want one.Your an undemocratic bitch.",
             "username": "dww_994",
@@ -823,7 +809,6 @@ MAPPING = {
             "date": "April 15, 2017"
         }
     ],
-
     "carolinelucas": [{
             "text": "All I hear is Taxes, taxes, taxes, FUCK OFF!!!",
             "username": "davymac85",
@@ -845,7 +830,6 @@ MAPPING = {
             "date": "April 15, 2017"
         }
     ],
-
     "jonbartley": [{
             "text": "@jon_bartley you are a smug bastard, you want refugees, can they stay with you",
             "username": "Billionaire6661",
