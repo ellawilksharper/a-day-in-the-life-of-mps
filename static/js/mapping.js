@@ -322,7 +322,7 @@ MAPPING = {
         "username": "JDavies1969",
         "date": "April 15, 2017"
     }],
-    "TheresaMay": [{
+    "theresamay": [{
             "text": "I hear @theresa_may is on holiday in Wales.She can fuck right off back to England# fascist",
             "username": "halfienoakes",
             "date": "April 15, 2017"
