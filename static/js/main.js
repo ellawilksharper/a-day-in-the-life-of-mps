@@ -61,9 +61,9 @@ function get_graph_data(mp_map) {
 
     return {
         chart: {
-            type: 'bar'
+            type: 'bar',
+            width: 500
         },
-        width: 300px,
         title: {
             text: mp_map.name
         },
