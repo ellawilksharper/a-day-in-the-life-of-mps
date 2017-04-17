@@ -39,14 +39,14 @@ function show_tweets(mp_map) {
 }
 
 function get_graph_data(mp_map) {
-    var bitch = 0;
+    var fuck = 0;
     var hypocrite = 0;
     var disgrace = 0;
     var dumb = 0;
 
     $.each(mp_map, function() {
-        if (this.text.toLowerCase().includes('bitch')){
-            bitch++;
+        if (this.text.toLowerCase().includes('fuck')){
+            fuck++;
         }
         if (this.text.toLowerCase().includes('hypocrite')){
             hypocrite++;
@@ -68,7 +68,7 @@ function get_graph_data(mp_map) {
             text: mp_map.name
         },
         xAxis: {
-            categories: ['Bitch', 'Hypocrite', 'Disgrace', 'Dumb']
+            categories: ['Fuck', 'Hypocrite', 'Disgrace', 'Dumb']
         },
         yAxis: {
             title: {
@@ -76,7 +76,7 @@ function get_graph_data(mp_map) {
             }
         },
         series: [{
-            data: [bitch, hypocrite, disgrace, dumb]
+            data: [fuck, hypocrite, disgrace, dumb]
         }],
     }
 }
