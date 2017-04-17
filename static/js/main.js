@@ -4,7 +4,7 @@ function change_mp(mp) {
     var index = parseInt($($(mp).closest('.row')[0]).attr('name').split('-')[1]);
     var val = $(mp).val()
     show_tweets(index, val);
-    change_graph_source(index, val);
+    //change_graph_source(index, val);
 }
 
 function change_graph_source(index, mp_name) {
