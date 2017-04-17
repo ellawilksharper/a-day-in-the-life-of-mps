@@ -9,8 +9,8 @@ function change_mp(mp) {
 }
 
 function change_graph_source(mp_map, index) {
-    var graph_container = $('.graph-container')[index];
-    $(graph_container).highcharts(get_graph_data(mp_map));
+    var graph_data = get_graph_data(mp_map);
+    Highcharts.chart('graph-container-' + index, graph_data);
 }
 
 function set_tweet(tweet, mp_map) {
