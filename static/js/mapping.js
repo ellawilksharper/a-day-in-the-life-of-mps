@@ -560,7 +560,7 @@ MAPPING = {
         "username": "Kurako76",
         "date": "April 15, 2017"
     }],
-    "Philiphammond ": [{
+    "philiphammond ": [{
         "text": "Oh what a liar you are philip ???",
         "username": "bigbadfuds",
         "date": "April 15, 2017"
