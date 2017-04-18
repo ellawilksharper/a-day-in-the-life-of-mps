@@ -1,4 +1,4 @@
-# a-day-in-the-life-of-mps
-A day in the life of MPs
+# a-closer-look-at-online-abuse-against-MPs
+A Closer Look at Online Abuse Against MPs
 
-https://ellawilksharper.github.io/a-day-in-the-life-of-mps/
+https://ellawilksharper.github.io/a-closer-look-at-online-abuse-against-MPs/
